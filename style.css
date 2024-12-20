@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's dimensions */
+}
+
+body {
+  background-color: #a1ef8b; /* Retained your background color */
+  text-align: center;
+  font-family: Arial, sans-serif; /* Adds a consistent font style */
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap; /* Ensures elements wrap to the next line when needed */
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1.5rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+  font-size: 8vmin;
+  color: #772d8b;
+  background-color: #70d6ff;
+  display: flex; /* Centers content inside the box */
+  justify-content: center;
+  align-items: center;
+}
+
+#reset-btn,
+#new-btn {
+  padding: 1rem; /* Adjusted padding for better alignment */
+  font-size: 1.25rem; /* Corrected to match the previous functionality */
+  background-color: #5a0b4d;
+  color: #d3f6db;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer; /* Adds pointer cursor on hover */
+  transition: background-color 0.3s; /* Adds smooth hover effect */
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+  background-color: #3e0736; /* Adds a darker hover effect */
+}
+
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin; /* Updated height to match the reference */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem; /* Adds space between child elements */
+}
+
+.hide {
+  display: none;
+}
